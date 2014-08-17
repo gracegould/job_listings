@@ -1,0 +1,19 @@
+<h1>Job Description</h1>
+<h2>Please write about what job you do in our little form. We want people less confused about different jobs</h2>
+
+<%= form_for :description, url: descriptions_path do |d| %>
+<p>
+    <%= d.label :job_title %>
+    <%= d.text_field :job_title %>
+</p>
+
+<p>
+    <%= d.label :job_description %>
+    <%= d.text_area :job_description %>
+</p>
+
+<p>
+    <%= d.submit %>
+</p>
+
+<% end %>
